@@ -30,3 +30,9 @@ Used Visual Crossing API to fetch weather data. Had to cache the data since was 
 Only parsed three major settlement points ("LZ_HOUSTON", "LZ_NORTH", "LZ_AEN"), matched the location of weather with each of these regions
 Export the proccessed dataset as JSON file for the React frontend.
 Used Material UI, and Recharts graph library for building the frontend dashboard.
+Frontend Dashboard includes a timeseries graph plotting Price vs Windspeed over time and a Scatter plot of windspeed vs price correlation.
+
+# Screenshots
+![Screenshot 2025-04-20 at 10 53 17 PM](https://github.com/user-attachments/assets/f196d5b2-106c-4006-b1cc-79ba5072f6f5)
+
+![Screenshot 2025-04-20 at 10 43 10 PM](https://github.com/user-attachments/assets/69ee3e9c-0d3d-4b8c-9810-a19fac8a9362)
