@@ -42,7 +42,7 @@ export default function WeatherDashboard() {
 
   //fetch json data
   useEffect(() => {
-    fetch("ercot_weather_merged.json")
+    fetch("https://jwang724.github.io/weather-prices/ercot_weather_merged.json")
       .then((res) => res.json())
       .then((json) => {
         console.log("json here", json);
