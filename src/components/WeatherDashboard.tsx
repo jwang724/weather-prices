@@ -174,6 +174,11 @@ export default function WeatherDashboard() {
               <XAxis
                 dataKey="timestamp"
                 tickFormatter={(tick) => new Date(tick).toLocaleDateString()}
+                label={{
+                  value: "Date",
+                  position: "insideBottom",
+                  offset: -5,
+                }}
               />
               <YAxis
                 yAxisId="left"
@@ -211,8 +216,16 @@ export default function WeatherDashboard() {
           <ResponsiveContainer width="100%" height={300}>
             <ScatterChart>
               <CartesianGrid />
-              <XAxis dataKey="windspeed" name="Wind Speed" />
-              <YAxis dataKey="SettlementPointPrice" name="Price" />
+              <XAxis
+                dataKey="windspeed"
+                name="Wind Speed"
+                label={{ value: "Wind Speed (mph)", position: "insideBottom", offset: -5 }}
+              />
+              <YAxis
+                dataKey="SettlementPointPrice"
+                name="Price"
+                label={{ value: "Price", angle: -90, position: "insideLeft" }}
+              />
               <Tooltip cursor={{ strokeDasharray: "3 3" }} />
               <Scatter name="Data Points" data={sortedWindSpeedData} fill="#8884d8" />
             </ScatterChart>
